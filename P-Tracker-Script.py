@@ -3,7 +3,6 @@ import time
 from datetime import datetime
 import keyboard
 
-log_file = "ip_log.txt"
 previous_ip = ""
 
 def print_current_ip():
@@ -27,12 +26,7 @@ while True:
     
     if current_ip and current_ip != previous_ip:
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        log_entry = f"[{timestamp}] IP changed to: {current_ip}\n"
-        print(log_entry, end="")
-        
-        with open(log_file, "a") as file:
-            file.write(log_entry)
-        
+        print(f"[{timestamp}] IP changed to: {current_ip}")
         previous_ip = current_ip
     
     time.sleep(1)
