@@ -1,16 +1,19 @@
-# 🌐 IP Tracker Script: Real-Time IP Monitoring
+# 🌐 IP Tracker Script: Real-Time IP Monitoring with Colors
 
 ## Overview
-This lightweight Python script tracks your **public IP address in real-time** and displays any changes instantly. It’s perfect for users who frequently switch networks or want quick access to their current IP.
+This Python script **monitors your public IP in real time** and displays changes instantly with a visually enhanced output using colors.
 
 ## Features
 
-- **Instant IP Check:** Press **'p'** to print your current IP with a timestamp.  
-- **Automatic Monitoring:** The script continuously checks your IP every second and alerts you if it changes.  
-- **Simple & Efficient:** No logs, no clutter—just real-time IP updates in the terminal.  
+- 🟢 **Instant IP Check:** Press **'p'** to display your current IP (green).  
+- 🔵 **Initial IP Display:** Your starting IP is shown when the script runs (cyan).  
+- 🔴 **IP Change Alerts:** If your IP changes, a red warning appears.  
+- ⚡ **Lightweight & Efficient:** No logs, just a clean, colorful terminal display.  
 
 ## Why Use It?
-Ideal for travelers, network admins, and privacy-conscious users who need to monitor their internet connection with ease.
+Ideal for **travelers, network admins, and privacy-conscious users** who want an easy way to monitor their network status.
 
 ## Get Started
-Run the script in a Python environment with internet access, and stay updated on your network status! 🚀
+1. Install dependencies:  
+   ```sh
+   pip install keyboard colorama
