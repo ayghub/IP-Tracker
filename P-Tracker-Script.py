@@ -9,7 +9,8 @@ previous_ip = ""
 def print_current_ip():
     ping_command = "curl -s ip.me"
     current_ip = os.popen(ping_command).read().strip()
-    print(f"Current IP: {current_ip}")
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{timestamp}] Current IP: {current_ip}")
 
 # Register the hotkey to immediately print IP when 'p' is pressed
 keyboard.add_hotkey("p", print_current_ip)
@@ -17,7 +18,8 @@ keyboard.add_hotkey("p", print_current_ip)
 # Get initial IP
 ping_command = "curl -s ip.me"
 previous_ip = os.popen(ping_command).read().strip()
-print(f"Current IP: {previous_ip}")
+timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+print(f"[{timestamp}] Current IP: {previous_ip}")
 
 while True:
     ping_command = "curl -s ip.me"
