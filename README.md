@@ -1,4 +1,4 @@
-# 🌐 IP Tracker Script: Real-Time IP Monitoring with Colors
+# 🌐 IP Tracker Script: Real-Time IP Monitoring.
 
 ## Overview
 This Python script **monitors your public IP in real time** and displays changes instantly with a visually enhanced output using colors.
